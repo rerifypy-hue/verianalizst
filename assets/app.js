@@ -38,7 +38,6 @@ document.querySelectorAll("#openWpTop, #openWpHero, #openWpContact").forEach((bu
   button.addEventListener("click", openWp);
 });
 
-document.querySelector("#openAdmin").addEventListener("click", openAdmin);
 document.querySelector("#closeAdmin").addEventListener("click", closeAdmin);
 
 adminPanel.addEventListener("click", (event) => {
@@ -75,3 +74,9 @@ document.querySelector("#saveWpUrl").addEventListener("click", () => {
 if (window.location.hash === "#admin") {
   openAdmin();
 }
+
+document.addEventListener("keydown", (event) => {
+  if (event.ctrlKey && event.altKey && event.key.toLowerCase() === "a") {
+    openAdmin();
+  }
+});

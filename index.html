@@ -5,119 +5,207 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="SPSS, R, Python ve Minitab ile akademik ve kurumsal veri analizi hizmetleri."
+      content="SPSS, R, Python ve Minitab ile tez, anket, akademik çalışma ve kurumsal veri analizi desteği."
     />
-    <title>VeriAnalizST | SPSS, R, Python, Minitab Veri Analizi</title>
+    <title>VeriAnalizST | Profesyonel Veri Analizi Danışmanlığı</title>
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
-    <header class="topbar">
+    <header class="site-header">
       <a class="brand" href="#anasayfa" aria-label="VeriAnalizST ana sayfa">
         <span class="brand-mark">VA</span>
-        <span>VeriAnalizST</span>
+        <span class="brand-text">VeriAnalizST</span>
       </a>
 
       <nav class="nav" aria-label="Ana menü">
         <a href="#hizmetler">Hizmetler</a>
+        <a href="#teslimatlar">Teslimatlar</a>
         <a href="#surec">Süreç</a>
         <a href="#iletisim">İletişim</a>
       </nav>
 
-      <button class="ghost-button" id="openWpTop" type="button">WP'ye Git</button>
+      <button class="header-cta" id="openWpTop" type="button">Teklif Al</button>
     </header>
 
     <main id="anasayfa">
       <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">SPSS | R | Python | Minitab</p>
-          <h1>Verinizi anlaşılır sonuca dönüştüren analiz desteği.</h1>
+        <img
+          class="hero-image"
+          src="assets/hero-analysis.png"
+          alt="Veri analizi için kullanılan laptop, grafikler ve çalışma masası"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="kicker">SPSS, R, Python ve Minitab ile analiz desteği</p>
+          <h1>Veri setinizi raporlanabilir, anlaşılır ve savunulabilir sonuca dönüştürün.</h1>
           <p class="hero-text">
-            Akademik çalışmalar, tezler, anketler, iş raporları ve kurumsal karar süreçleri için
-            temiz, açıklanabilir ve teslim edilebilir veri analizi.
+            Tez, makale, anket, memnuniyet araştırması ve iş verileri için yöntem seçimi,
+            veri temizleme, istatistiksel analiz, grafikler ve yorumlanmış rapor teslimi.
           </p>
           <div class="hero-actions">
-            <button class="primary-button" id="openWpHero" type="button">WordPress Hesabıma Yönlendir</button>
-            <a class="secondary-button" href="#hizmetler">Hizmetleri Gör</a>
+            <button class="primary-button" id="openWpHero" type="button">WordPress Sayfama Git</button>
+            <a class="secondary-button" href="#hizmetler">Hizmetleri İncele</a>
           </div>
+          <dl class="trust-strip" aria-label="Hizmet özeti">
+            <div>
+              <dt>4</dt>
+              <dd>Analiz aracı</dd>
+            </div>
+            <div>
+              <dt>Tez</dt>
+              <dd>Akademik rapor</dd>
+            </div>
+            <div>
+              <dt>Kurumsal</dt>
+              <dd>İş verisi analizi</dd>
+            </div>
+          </dl>
         </div>
+      </section>
 
-        <div class="analysis-panel" aria-label="Analiz araçları özeti">
-          <div class="metric-row">
-            <span>Veri hazırlama</span>
-            <strong>Temizleme + Kodlama</strong>
-          </div>
-          <div class="metric-row">
-            <span>İstatistik</span>
-            <strong>Test + Modelleme</strong>
-          </div>
-          <div class="tool-grid">
-            <span>SPSS</span>
-            <span>R</span>
-            <span>Python</span>
-            <span>Minitab</span>
-          </div>
-          <div class="chart" aria-hidden="true">
-            <i style="height: 42%"></i>
-            <i style="height: 74%"></i>
-            <i style="height: 56%"></i>
-            <i style="height: 88%"></i>
-            <i style="height: 63%"></i>
-          </div>
+      <section class="intro-band">
+        <div>
+          <span>Uygun olduğu çalışmalar</span>
+          <strong>Anket verisi, tez analizi, ölçek çalışmaları, kalite verileri ve yönetim raporları</strong>
+        </div>
+        <div>
+          <span>Çıktı formatı</span>
+          <strong>Tablo, grafik, yöntem açıklaması ve sonuç yorumu</strong>
         </div>
       </section>
 
       <section class="section" id="hizmetler">
         <div class="section-heading">
-          <p class="eyebrow">Ne yapıyorum?</p>
-          <h2>Analizden rapora kadar sade bir hizmet akışı</h2>
+          <p class="kicker">Hizmet alanları</p>
+          <h2>Verinin türüne göre doğru analiz, doğru rapor dili.</h2>
+          <p>
+            Her çalışmada önce veri yapısı ve araştırma sorusu incelenir. Sonra kullanılacak test,
+            yazılım ve raporlama biçimi netleştirilir.
+          </p>
         </div>
 
-        <div class="cards">
-          <article class="card">
-            <h3>Anket ve tez analizi</h3>
-            <p>Güvenilirlik, faktör analizi, t-test, ANOVA, korelasyon ve regresyon çalışmaları.</p>
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-number">01</span>
+            <h3>Akademik ve tez analizi</h3>
+            <p>
+              Güvenilirlik analizi, normallik testleri, t-test, ANOVA, korelasyon, regresyon,
+              faktör analizi ve hipotez sonuçlandırma.
+            </p>
           </article>
-          <article class="card">
-            <h3>Python ve R raporları</h3>
-            <p>Veri temizleme, görselleştirme, modelleme ve tekrar üretilebilir analiz çıktıları.</p>
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <h3>Anket ve ölçek çalışmaları</h3>
+            <p>
+              Veri kodlama, eksik veri kontrolü, ölçek puanlama, çapraz tablolar ve anlamlılık
+              testleriyle anlaşılır çıktı üretimi.
+            </p>
           </article>
-          <article class="card">
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <h3>Python ve R analizleri</h3>
+            <p>
+              Temizlenebilir kod akışı, veri görselleştirme, modelleme, segmentasyon ve tekrar
+              üretilebilir analiz dosyaları.
+            </p>
+          </article>
+          <article class="service-card">
+            <span class="service-number">04</span>
             <h3>Minitab kalite analizi</h3>
-            <p>Süreç iyileştirme, kontrol grafikleri, hipotez testleri ve üretim verisi yorumlama.</p>
+            <p>
+              Süreç verileri, kontrol grafikleri, hipotez testleri ve üretim/operasyon performans
+              yorumları.
+            </p>
           </article>
+        </div>
+      </section>
+
+      <section class="tools-band" aria-label="Kullanılan araçlar">
+        <span>SPSS</span>
+        <span>R</span>
+        <span>Python</span>
+        <span>Minitab</span>
+        <span>Excel</span>
+      </section>
+
+      <section class="section deliverables" id="teslimatlar">
+        <div class="deliverable-copy">
+          <p class="kicker">Teslim edilenler</p>
+          <h2>Sadece analiz değil, sunulabilir sonuç.</h2>
+          <p>
+            Çalışmanın sonunda sayısal çıktılar tek başına bırakılmaz. Hangi testin neden
+            kullanıldığı, bulgunun ne anlama geldiği ve raporda nasıl ifade edileceği net yazılır.
+          </p>
+        </div>
+
+        <div class="deliverable-list">
+          <div>
+            <strong>Temiz veri seti</strong>
+            <span>Kodlama, eksik veri ve aykırı değer kontrolü.</span>
+          </div>
+          <div>
+            <strong>Analiz tabloları</strong>
+            <span>SPSS/R/Python/Minitab çıktılarının düzenlenmiş hali.</span>
+          </div>
+          <div>
+            <strong>Grafikler</strong>
+            <span>Okunabilir, rapora eklenebilir görseller.</span>
+          </div>
+          <div>
+            <strong>Yorum metni</strong>
+            <span>Akademik veya kurumsal dile uygun sonuç açıklaması.</span>
+          </div>
         </div>
       </section>
 
       <section class="process" id="surec">
-        <div>
-          <p class="eyebrow">Nasıl ilerler?</p>
-          <h2>Dosyayı gönder, yöntemi netleştirelim, sonucu teslim edelim.</h2>
+        <div class="section-heading">
+          <p class="kicker">Çalışma süreci</p>
+          <h2>Net, hızlı ve kontrollü ilerleyen analiz akışı.</h2>
         </div>
-        <ol class="steps">
-          <li><strong>1</strong><span>Veri seti ve hedef analiz incelenir.</span></li>
-          <li><strong>2</strong><span>Uygun yöntem ve yazılım seçilir.</span></li>
-          <li><strong>3</strong><span>Tablo, grafik ve yorumlarla sonuç paylaşılır.</span></li>
+        <ol class="process-grid">
+          <li>
+            <span>1</span>
+            <strong>Dosya incelenir</strong>
+            <p>Veri seti, değişkenler, araştırma sorusu ve beklenen çıktı değerlendirilir.</p>
+          </li>
+          <li>
+            <span>2</span>
+            <strong>Yöntem belirlenir</strong>
+            <p>Uygun testler ve kullanılacak yazılım netleştirilir.</p>
+          </li>
+          <li>
+            <span>3</span>
+            <strong>Analiz yapılır</strong>
+            <p>Tablo, grafik ve istatistiksel bulgular hazırlanır.</p>
+          </li>
+          <li>
+            <span>4</span>
+            <strong>Rapor teslim edilir</strong>
+            <p>Sonuçlar anlaşılır yorumlarla paylaşılır.</p>
+          </li>
         </ol>
       </section>
 
-      <section class="contact" id="iletisim">
+      <section class="cta-section" id="iletisim">
         <div>
-          <p class="eyebrow">İletişim</p>
-          <h2>Projeni konuşmak için WordPress sayfama geç.</h2>
+          <p class="kicker">Projeni konuşalım</p>
+          <h2>Veri setinizi gönderin, en doğru analiz yolunu birlikte netleştirelim.</h2>
           <p>
-            Google reklamlarından gelen ziyaretçiler bu sayfada hizmeti görür, ardından WordPress
-            hesabındaki iletişim veya satış sayfasına yönlenir.
+            Buton sizi WordPress iletişim sayfasına yönlendirir. Reklamdan gelen ziyaretçiler
+            buradan detaylı bilgi ve teklif isteyebilir.
           </p>
         </div>
-        <button class="primary-button" id="openWpContact" type="button">WordPress'e Yönlendir</button>
+        <button class="primary-button light" id="openWpContact" type="button">WordPress'e Git</button>
       </section>
     </main>
 
     <section class="admin-gate" id="adminPanel" aria-hidden="true">
       <div class="admin-box">
         <button class="admin-close" id="closeAdmin" type="button" aria-label="Admin panelini kapat">x</button>
+        <p class="kicker">Gizli yönetim</p>
         <h2>Admin Paneli</h2>
-        <p>Bu panel normal ziyaretçiye görünmez. Giriş için adresin sonuna <strong>#admin</strong> ekle.</p>
+        <p>Bu alan normal ziyaretçiye görünmez. Açmak için adresin sonuna <strong>#admin</strong> eklenir.</p>
 
         <form id="adminLogin" class="admin-form">
           <label>
@@ -135,7 +223,7 @@
         <div class="admin-dashboard" id="adminDashboard" hidden>
           <div>
             <span>Site durumu</span>
-            <strong>Yayına hazır</strong>
+            <strong>Yayında</strong>
           </div>
           <div>
             <span>WordPress yönlendirme</span>
@@ -152,7 +240,7 @@
 
     <footer class="footer">
       <span>VeriAnalizST</span>
-      <button class="admin-link" id="openAdmin" type="button">Yönetim</button>
+      <span>Profesyonel veri analizi danışmanlığı</span>
     </footer>
 
     <script src="assets/app.js"></script>
