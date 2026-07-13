@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SPSS, R, Python ve Minitab ile akademik ve kurumsal veri analizi hizmetleri."
+    />
+    <title>VeriAnalizST | SPSS, R, Python, Minitab Veri Analizi</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#anasayfa" aria-label="VeriAnalizST ana sayfa">
+        <span class="brand-mark">VA</span>
+        <span>VeriAnalizST</span>
+      </a>
+
+      <nav class="nav" aria-label="Ana menü">
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#surec">Süreç</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+
+      <button class="ghost-button" id="openWpTop" type="button">WP'ye Git</button>
+    </header>
+
+    <main id="anasayfa">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">SPSS | R | Python | Minitab</p>
+          <h1>Verinizi anlaşılır sonuca dönüştüren analiz desteği.</h1>
+          <p class="hero-text">
+            Akademik çalışmalar, tezler, anketler, iş raporları ve kurumsal karar süreçleri için
+            temiz, açıklanabilir ve teslim edilebilir veri analizi.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-button" id="openWpHero" type="button">WordPress Hesabıma Yönlendir</button>
+            <a class="secondary-button" href="#hizmetler">Hizmetleri Gör</a>
+          </div>
+        </div>
+
+        <div class="analysis-panel" aria-label="Analiz araçları özeti">
+          <div class="metric-row">
+            <span>Veri hazırlama</span>
+            <strong>Temizleme + Kodlama</strong>
+          </div>
+          <div class="metric-row">
+            <span>İstatistik</span>
+            <strong>Test + Modelleme</strong>
+          </div>
+          <div class="tool-grid">
+            <span>SPSS</span>
+            <span>R</span>
+            <span>Python</span>
+            <span>Minitab</span>
+          </div>
+          <div class="chart" aria-hidden="true">
+            <i style="height: 42%"></i>
+            <i style="height: 74%"></i>
+            <i style="height: 56%"></i>
+            <i style="height: 88%"></i>
+            <i style="height: 63%"></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="hizmetler">
+        <div class="section-heading">
+          <p class="eyebrow">Ne yapıyorum?</p>
+          <h2>Analizden rapora kadar sade bir hizmet akışı</h2>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Anket ve tez analizi</h3>
+            <p>Güvenilirlik, faktör analizi, t-test, ANOVA, korelasyon ve regresyon çalışmaları.</p>
+          </article>
+          <article class="card">
+            <h3>Python ve R raporları</h3>
+            <p>Veri temizleme, görselleştirme, modelleme ve tekrar üretilebilir analiz çıktıları.</p>
+          </article>
+          <article class="card">
+            <h3>Minitab kalite analizi</h3>
+            <p>Süreç iyileştirme, kontrol grafikleri, hipotez testleri ve üretim verisi yorumlama.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="process" id="surec">
+        <div>
+          <p class="eyebrow">Nasıl ilerler?</p>
+          <h2>Dosyayı gönder, yöntemi netleştirelim, sonucu teslim edelim.</h2>
+        </div>
+        <ol class="steps">
+          <li><strong>1</strong><span>Veri seti ve hedef analiz incelenir.</span></li>
+          <li><strong>2</strong><span>Uygun yöntem ve yazılım seçilir.</span></li>
+          <li><strong>3</strong><span>Tablo, grafik ve yorumlarla sonuç paylaşılır.</span></li>
+        </ol>
+      </section>
+
+      <section class="contact" id="iletisim">
+        <div>
+          <p class="eyebrow">İletişim</p>
+          <h2>Projeni konuşmak için WordPress sayfama geç.</h2>
+          <p>
+            Google reklamlarından gelen ziyaretçiler bu sayfada hizmeti görür, ardından WordPress
+            hesabındaki iletişim veya satış sayfasına yönlenir.
+          </p>
+        </div>
+        <button class="primary-button" id="openWpContact" type="button">WordPress'e Yönlendir</button>
+      </section>
+    </main>
+
+    <section class="admin-gate" id="adminPanel" aria-hidden="true">
+      <div class="admin-box">
+        <button class="admin-close" id="closeAdmin" type="button" aria-label="Admin panelini kapat">x</button>
+        <h2>Admin Paneli</h2>
+        <p>Bu panel normal ziyaretçiye görünmez. Giriş için adresin sonuna <strong>#admin</strong> ekle.</p>
+
+        <form id="adminLogin" class="admin-form">
+          <label>
+            Kullanıcı adı
+            <input id="adminUser" autocomplete="username" required />
+          </label>
+          <label>
+            Şifre
+            <input id="adminPass" type="password" autocomplete="current-password" required />
+          </label>
+          <button class="primary-button" type="submit">Giriş Yap</button>
+          <span class="login-message" id="loginMessage"></span>
+        </form>
+
+        <div class="admin-dashboard" id="adminDashboard" hidden>
+          <div>
+            <span>Site durumu</span>
+            <strong>Yayına hazır</strong>
+          </div>
+          <div>
+            <span>WordPress yönlendirme</span>
+            <strong id="wpPreview">Ayarlanmadı</strong>
+          </div>
+          <label>
+            WordPress linki
+            <input id="wpUrlInput" placeholder="https://siteadresin.wordpress.com" />
+          </label>
+          <button class="secondary-button" id="saveWpUrl" type="button">Linki Kaydet</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>VeriAnalizST</span>
+      <button class="admin-link" id="openAdmin" type="button">Yönetim</button>
+    </footer>
+
+    <script src="assets/app.js"></script>
+  </body>
+</html>
