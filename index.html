@@ -8,13 +8,13 @@
       content="SPSS, R, Python ve Minitab ile tez, anket, akademik çalışma ve kurumsal veri analizi desteği."
     />
     <title>VeriAnalizST | Profesyonel Veri Analizi Danışmanlığı</title>
-    <link rel="stylesheet" href="assets/styles.css?v=3" />
+    <link rel="stylesheet" href="assets/styles.css?v=4" />
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#anasayfa" aria-label="VeriAnalizST ana sayfa">
         <span class="brand-mark">VA</span>
-        <span class="brand-text">VeriAnalizST</span>
+        <span class="brand-text" data-setting="brandName">VeriAnalizST</span>
       </a>
 
       <nav class="nav" aria-label="Ana menü">
@@ -24,26 +24,26 @@
         <a href="#iletisim">İletişim</a>
       </nav>
 
-      <button class="header-cta" id="openWpTop" type="button">Teklif Al</button>
+      <a class="header-cta" href="#iletisim" data-setting="topButton">Teklif Al</a>
     </header>
 
     <main id="anasayfa">
       <section class="hero">
         <img
           class="hero-image"
-          src="assets/hero-analysis.png?v=3"
+          src="assets/hero-analysis.png?v=4"
           alt="Veri analizi için kullanılan laptop, grafikler ve çalışma masası"
         />
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <p class="kicker">SPSS, R, Python ve Minitab ile analiz desteği</p>
-          <h1>Veri setinizi raporlanabilir, anlaşılır ve savunulabilir sonuca dönüştürün.</h1>
-          <p class="hero-text">
+          <p class="kicker" data-setting="heroKicker">SPSS, R, Python ve Minitab ile analiz desteği</p>
+          <h1 data-setting="heroTitle">Veri setinizi raporlanabilir, anlaşılır ve savunulabilir sonuca dönüştürün.</h1>
+          <p class="hero-text" data-setting="heroText">
             Tez, makale, anket, memnuniyet araştırması ve iş verileri için yöntem seçimi,
             veri temizleme, istatistiksel analiz, grafikler ve yorumlanmış rapor teslimi.
           </p>
           <div class="hero-actions">
-            <button class="primary-button" id="openWpHero" type="button">WordPress Sayfama Git</button>
+            <a class="primary-button" href="#iletisim" data-setting="primaryButton">İletişime Geç</a>
             <a class="secondary-button" href="#hizmetler">Hizmetleri İncele</a>
           </div>
           <dl class="trust-strip" aria-label="Hizmet özeti">
@@ -190,13 +190,16 @@
       <section class="cta-section" id="iletisim">
         <div>
           <p class="kicker">Projeni konuşalım</p>
-          <h2>Veri setinizi gönderin, en doğru analiz yolunu birlikte netleştirelim.</h2>
-          <p>
-            Buton sizi WordPress iletişim sayfasına yönlendirir. Reklamdan gelen ziyaretçiler
-            buradan detaylı bilgi ve teklif isteyebilir.
+          <h2 data-setting="contactTitle">Veri setinizi gönderin, en doğru analiz yolunu birlikte netleştirelim.</h2>
+          <p data-setting="contactText">
+            Bu site tek iletişim noktasıdır. WhatsApp veya e-posta üzerinden dosya, çalışma konusu
+            ve beklenen analiz türünü paylaşabilirsiniz.
           </p>
         </div>
-        <button class="primary-button light" id="openWpContact" type="button">WordPress'e Git</button>
+        <div class="contact-actions">
+          <a class="primary-button light" id="whatsappLink" href="#" rel="noopener">WhatsApp</a>
+          <a class="secondary-button contact-mail" id="emailLink" href="#">E-posta</a>
+        </div>
       </section>
     </main>
 
@@ -204,7 +207,7 @@
       <div class="admin-box">
         <button class="admin-close" id="closeAdmin" type="button" aria-label="Admin panelini kapat">x</button>
         <p class="kicker">Gizli yönetim</p>
-        <h2>Admin Paneli</h2>
+        <h2>Site Ayarları</h2>
         <p>Bu alan normal ziyaretçiye görünmez. Açmak için adresin sonuna <strong>#admin</strong> eklenir.</p>
 
         <form id="adminLogin" class="admin-form">
@@ -220,29 +223,61 @@
           <span class="login-message" id="loginMessage"></span>
         </form>
 
-        <div class="admin-dashboard" id="adminDashboard" hidden>
-          <div>
-            <span>Site durumu</span>
-            <strong>Yayında</strong>
-          </div>
-          <div>
-            <span>WordPress yönlendirme</span>
-            <strong id="wpPreview">Ayarlanmadı</strong>
-          </div>
+        <form class="admin-dashboard" id="adminDashboard" hidden>
           <label>
-            WordPress linki
-            <input id="wpUrlInput" placeholder="https://siteadresin.wordpress.com" />
+            Marka adı
+            <input name="brandName" />
           </label>
-          <button class="secondary-button" id="saveWpUrl" type="button">Linki Kaydet</button>
-        </div>
+          <label>
+            Üst buton yazısı
+            <input name="topButton" />
+          </label>
+          <label>
+            Ana küçük başlık
+            <input name="heroKicker" />
+          </label>
+          <label>
+            Ana başlık
+            <textarea name="heroTitle"></textarea>
+          </label>
+          <label>
+            Ana açıklama
+            <textarea name="heroText"></textarea>
+          </label>
+          <label>
+            Ana buton yazısı
+            <input name="primaryButton" />
+          </label>
+          <label>
+            İletişim başlığı
+            <textarea name="contactTitle"></textarea>
+          </label>
+          <label>
+            İletişim açıklaması
+            <textarea name="contactText"></textarea>
+          </label>
+          <label>
+            WhatsApp numarası
+            <input name="phone" placeholder="905551112233" />
+          </label>
+          <label>
+            E-posta
+            <input name="email" placeholder="ornek@mail.com" />
+          </label>
+          <div class="admin-actions">
+            <button class="primary-button" type="submit">Ayarları Kaydet</button>
+            <button class="secondary-button dark-text" id="resetSettings" type="button">Sıfırla</button>
+          </div>
+          <span class="save-message" id="saveMessage"></span>
+        </form>
       </div>
     </section>
 
     <footer class="footer">
-      <span>VeriAnalizST</span>
+      <span data-setting="brandName">VeriAnalizST</span>
       <span>Profesyonel veri analizi danışmanlığı</span>
     </footer>
 
-    <script src="assets/app.js"></script>
+    <script src="assets/app.js?v=4"></script>
   </body>
 </html>

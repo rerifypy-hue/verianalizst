@@ -40,7 +40,8 @@ a {
 }
 
 button,
-input {
+input,
+textarea {
   font: inherit;
 }
 
@@ -97,6 +98,9 @@ input {
 .header-cta,
 .primary-button,
 .secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-height: 46px;
   border-radius: 8px;
   padding: 12px 18px;
@@ -119,9 +123,6 @@ input {
 }
 
 .secondary-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   background: rgba(255, 255, 255, 0.9);
   color: var(--ink);
   border-color: rgba(255, 255, 255, 0.52);
@@ -422,6 +423,16 @@ h3 {
   color: #fff;
 }
 
+.contact-actions {
+  display: grid;
+  gap: 12px;
+  min-width: 230px;
+}
+
+.contact-mail {
+  word-break: break-word;
+}
+
 .cta-section .kicker,
 .cta-section p {
   color: rgba(255, 255, 255, 0.78);
@@ -508,6 +519,16 @@ input {
   color: var(--ink);
 }
 
+textarea {
+  width: 100%;
+  min-height: 92px;
+  resize: vertical;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: var(--ink);
+}
+
 .admin-dashboard div {
   display: flex;
   justify-content: space-between;
@@ -517,10 +538,28 @@ input {
   background: var(--soft);
 }
 
+.admin-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dark-text {
+  color: var(--ink);
+  border-color: var(--line);
+}
+
 .login-message {
   min-height: 22px;
   color: #b42318;
   font-size: 14px;
+}
+
+.save-message {
+  min-height: 22px;
+  color: var(--teal-dark);
+  font-size: 14px;
+  font-weight: 800;
 }
 
 @media (max-width: 1040px) {
