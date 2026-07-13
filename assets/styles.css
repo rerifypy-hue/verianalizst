@@ -289,6 +289,41 @@ h3 {
   background: var(--surface);
 }
 
+.consulting-map {
+  background: #f9fafb;
+}
+
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.pillar-grid article {
+  display: grid;
+  gap: 12px;
+  min-height: 230px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.pillar-grid span {
+  color: var(--amber);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.pillar-grid strong {
+  font-size: 21px;
+}
+
+.pillar-grid p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .service-stack {
   display: grid;
   gap: 12px;
@@ -394,6 +429,44 @@ h3 {
   background: var(--surface);
 }
 
+.request-brief {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(360px, 1fr);
+  gap: clamp(32px, 6vw, 86px);
+  background: #eef4f3;
+}
+
+.brief-copy {
+  align-self: start;
+}
+
+.brief-copy p {
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.brief-list {
+  display: grid;
+  gap: 12px;
+}
+
+.brief-list div {
+  display: grid;
+  gap: 6px;
+  padding: 18px;
+  border: 1px solid #cadbd7;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.brief-list strong {
+  font-size: 18px;
+}
+
+.brief-list span {
+  color: var(--muted);
+}
+
 .output-card {
   align-self: start;
   padding: 30px;
@@ -431,6 +504,34 @@ h3 {
 
 .integrity p {
   margin: 0;
+}
+
+.faq-section {
+  background: var(--surface);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.faq-grid article {
+  display: grid;
+  gap: 10px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcfd;
+}
+
+.faq-grid strong {
+  font-size: 19px;
+}
+
+.faq-grid p {
+  margin: 0;
+  color: var(--muted);
 }
 
 .cta-section {
@@ -486,11 +587,14 @@ h3 {
   .split-section,
   .output-section,
   .integrity,
-  .cta-section {
+  .cta-section,
+  .request-brief {
     grid-template-columns: 1fr;
   }
 
-  .case-grid {
+  .case-grid,
+  .pillar-grid,
+  .faq-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -544,7 +648,9 @@ h3 {
 
   .signal-strip,
   .case-grid,
-  .method-grid {
+  .method-grid,
+  .pillar-grid,
+  .faq-grid {
     grid-template-columns: 1fr;
   }
 
